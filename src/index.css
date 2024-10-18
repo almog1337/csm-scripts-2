@@ -1,0 +1,61 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --color-primary: #536493;
+  --color-secondary: #7CF5FF;
+  --color-background: #F4F6FF;
+  --color-text: #333333;
+  --color-error: #FF6B6B;
+  --color-success: #4CAF50;
+  --color-warning: #FFA000;
+  --color-info: #2196F3;
+  --color-border: #E0E0E0;
+}
+
+.dark {
+  --color-primary: #7B93D9;
+  --color-secondary: #00E5FF;
+  --color-background: #1E1E1E;
+  --color-text: #F4F6FF;
+  --color-error: #FF8A80;
+  --color-success: #69F0AE;
+  --color-warning: #FFD740;
+  --color-info: #64B5F6;
+  --color-border: #424242;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
+
+/* RTL specific styles */
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Flip icons that need to be mirrored in RTL */
+.rtl-mirror {
+  transform: scaleX(-1);
+}
